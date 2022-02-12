@@ -11,21 +11,19 @@ export class UserCompoenent{
 
     //properties
     firstName = 'John';
-    lastName = 'Doe';
+    lastName = 'Smith';
     age = 30;
+    address = {
+        street: '50 Main Street',
+        city: 'Boston',
+        state: 'MA'
+    }
 
     //methods
     constructor(){
-       this.sayHello();
 
     }
-
-    sayHello(){
-        console.log(this.age);
-        this.hasBirthday();
-        console.log(this.age);
-    } 
-    hasBirthday(){
-        this.age += 1;
+    showAge(){
+        return this.age + 2;
     }
 }
