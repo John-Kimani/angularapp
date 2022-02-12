@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { User } from '../../models/User';
 
 @Component({
     selector: 'app-user',
@@ -27,13 +28,5 @@ export class UserCompoenent{
         }
     }
 
-}interface User {
-    firstName: string,
-    lastName: string,
-    age: number,
-    address: {
-        street: string,
-        city: string,
-        state: string,
-    }
 }
+
