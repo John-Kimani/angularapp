@@ -9,4 +9,23 @@ import { Component } from "@angular/core";
 
 export class UserCompoenent{
 
+    //properties
+    firstName = 'John';
+    lastName = 'Doe';
+    age = 30;
+
+    //methods
+    constructor(){
+       this.sayHello();
+
+    }
+
+    sayHello(){
+        console.log(this.age);
+        this.hasBirthday();
+        console.log(this.age);
+    } 
+    hasBirthday(){
+        this.age += 1;
+    }
 }
