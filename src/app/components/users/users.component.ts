@@ -12,6 +12,7 @@ export class UsersComponent implements OnInit {
 
   showExtended: boolean = true;
   loaded: boolean = false;
+  enableAdd: boolean = false;
 
 
   constructor() { }
@@ -28,7 +29,8 @@ export class UsersComponent implements OnInit {
               street: '50 Main st',
               city: 'Boston',
               state: 'MA',
-          }
+          },
+          image: "https://www.istockphoto.com/photo/excited-woman-wearing-rainbow-cardigan-gm1327495437-411841849?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fpeople&utm_term=people%3A%3A%3A"
       },
       {
         firstName: 'Kevin',
@@ -38,7 +40,8 @@ export class UsersComponent implements OnInit {
             street: '20 School st',
             city: 'Lynn',
             state: 'MA',
-        }
+        },
+        
     },
     {
       firstName: 'Karen',
@@ -48,7 +51,8 @@ export class UsersComponent implements OnInit {
           street: '55 Mill st',
           city: 'Miami',
           state: 'FL',
-      }
+      },
+      
   },
 ];
 
